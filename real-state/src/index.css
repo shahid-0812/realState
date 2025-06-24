@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: "semi-bold";
+  src: url("/fonts/PlusJakartaSans-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "medium";
+  src: url("/fonts/PlusJakartaSans-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "regular";
+  src: url("/fonts/PlusJakartaSans-Regular.ttf") format("truetype");
+}
+
+.semibold{
+  font-family: "semi-bold";
+}
+.medium{
+  font-family: "medium";
+}
+.regular{
+  font-family: "regular";
+}
+
+.hero-header {
+  position: relative;
+  background-image: url("/images/home/hero-image.jpg");
+  background-size: cover;
+  width: 1021.11px;
+  height: 601.2px;
+
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.hero-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.cur-time {
+  backdrop-filter: blur(8px);
+  /* Adjust blur level */
+  -webkit-backdrop-filter: blur(10px);
+  /* For Safari */
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.calender {
+  backdrop-filter: blur(10px);
+  /* Adjust blur level */
+  -webkit-backdrop-filter: blur(10px);
+  /* For Safari */
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.property-img{
+  background-size: cover;
+  height: 3rem;
+}
+/* bg-[#FFF48E] */
