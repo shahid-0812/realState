@@ -14,6 +14,8 @@
   src: url("/fonts/PlusJakartaSans-Regular.ttf") format("truetype");
 }
 
+
+
 .semibold{
   font-family: "semi-bold";
 }
@@ -67,3 +69,5 @@
   height: 3rem;
 }
 /* bg-[#FFF48E] */
+
+

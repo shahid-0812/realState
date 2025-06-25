@@ -112,7 +112,7 @@ export const Home = () => {
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
                     </span>
                 </div>
-                <div className="section-1-1 flex gap-3">
+                <div className="section-1-1 flex gap-6">
                     <img src="/images/home/section-1-img.jpg" alt="img" className='w-[70%]' />
                     <div className='flex flex-col self-end gap-3 text-gray-500 w-[25%]'>
                         <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's s</span>
@@ -223,7 +223,7 @@ export const Home = () => {
 
                 </div>
             </div>
-            <div className="section-5 flex flex-col items-center justify-center w-full h-full ">
+            <div className="section-5 flex flex-col gap-15   items-center justify-center w-full h-full mb-20">
                 <div className="section-5-header text-center items-center justify-center flex flex-col gap-3">
                     <div className='flex flex-col items-center justify-center gap-3'>
                         <span className='bg-[#FFF48E] px-3 py-2 rounded-full text-[#09242A]'>

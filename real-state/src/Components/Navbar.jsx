@@ -7,8 +7,8 @@ export const Navbar = () => {
             <div className="nav-links flex gap-15">
                 <Link to="/">Home</Link>
                 <span>explore </span>
-                <Link>Collections</Link>
-                <Link>Contact</Link>
+                <Link to="/collections">Collections</Link>
+                <Link to="/contact">Contact</Link>
             </div>
             <div className="nav-buttons flex items-center justify-center gap-4">
                 <span className="user-profile bg-rd-400 py-0.5 flex items-center justify-center rounded-4xl px-2 border-1 border-black">
