@@ -27,10 +27,40 @@ export const Home = () => {
             <div className="hero-section flex items-center justify-center py-10">
                 <div className='hero-header flex gap-8 items-center justify-between text-[#fff]'>
                     <div className="hero-text flex flex-col z-10 leading-none ml-20 w-[50%] gap-2">
-                        <span>Lorem Ipsum is simply dummy text</span>
+                        <div className='flex gap-3   items-center font-medium uppercase'>
+                            <span className='px-3 py-3 bg-[#FFF48E] rounded-full text-[#103D47]'>
+                                <i class="bi bi-house-fill"></i>
+                            </span>
+                            <span>Lorem Ipsum is simply dummy text</span>
+                        </div>
                         <div className="main-text flex flex-col font-bold text-[5.5rem]">
                             <span>RealState</span>
-                            <span className='transform -translate-x-8'>Property</span>
+                            <div className='flex items-center'>
+
+                                <span className='transform -translate-x-8'>Property</span>
+                                <div className="circle-text bg-white/50 relative w-[80px] h-[80px] rounded-full flex items-center justify-center mx-auto">
+                                    {"•  CONTACT US • CONTACT US • CONTACT US".split('').map((char, i) => (
+
+                                        <span
+                                            key={i}
+                                            className="absolute left-1/2 top-1/2 whitespace-pre text-white"
+                                            style={{
+                                                transform: `rotate(${i * (360 / 36)}deg) translate(0, -30px)`,
+                                                transformOrigin: '0 0'
+                                            }}
+                                        >
+                                            {char}
+                                        </span>
+
+
+
+                                    ))}
+                                    <div className='h-[30px] w-[30px] bg-[#FFF48E] rounded-full text-[10px] flex items-center justify-center'>
+                                        <i className='bi bi-arrow-down'></i>
+                                    </div>
+                                </div>
+                            </div>
+
                             <span>Investments</span>
                         </div>
                         <span className='text-sm'>Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text </span>

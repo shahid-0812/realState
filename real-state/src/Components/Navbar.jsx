@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 export const Navbar = () => {
     const [showDropdown, setShowDropdown] = useState(false);
     return (
-        <nav className="flex bg-[#fff] justify-around items-center py-[2rem]">
+        <nav className="flex bg-[#fff] justify-around items-center py-[2rem] shadow-lg sticky top-0 z-50">
             <span className="font-bold italic text-[1.5rem]">REALSTATE</span>
             <div className="nav-links flex gap-15 relative">
                 <Link to="/">Home</Link>

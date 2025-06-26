@@ -30,6 +30,11 @@
   font-family: "regular";
 }
 
+.circle-text span {
+  font-size: 6px;
+}
+
+
 .hero-header {
   position: relative;
   background-image: url("/images/home/hero-image.jpg");
@@ -76,8 +81,13 @@
 
 /* bg-[#FFF48E] */
 
-.filter-container{
+.filter-container {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gradient {
+  background: #FAF7F4;
+  background: linear-gradient(90deg, rgba(250, 247, 244, 1) 0%, rgba(255, 254, 252, 1) 100%);
 }
 
 .custom-range {
