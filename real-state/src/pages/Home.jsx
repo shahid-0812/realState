@@ -1,4 +1,6 @@
 import React from 'react'
+import { Testimony } from '../Components/Testimony';
+import { News } from '../Components/News';
 
 export const Home = () => {
 
@@ -194,89 +196,8 @@ export const Home = () => {
 
                 </div>
             </div>
-            <div className="section-4 my-20  px-30 py-15 flex flex-col gap-15">
-                <div className="section-4-header flex justify-between items-center">
-                    <span className='font-medium text-3xl w-[30%]'>Latest News: Property Insights & Inspiration</span>
-                    <div className='self-end flex gap-4 border-b-1 border-gray-500 pb-3 px-2 text-gray-500 font-medium'>
-                        <span>All Articles</span>
-                        <span>Home Inspiration</span>
-                        <span>Unique Homes</span>
-                        <span>Most Rated</span>
-                    </div>
-                </div>
-                <div className="articles w-full  flex justify-center items-start gap-5">
-                    <div className="article flex flex-col gap-3 ">
-                        <div style={{ backgroundImage: "url(/images/home/section-4-1.jpg)" }} className='h-[318px] w-[495px] bg-cover'></div>
-                        <div className='flex flex-col  '>
-                            <span className='font-medium text-2xl '>Have the best style for your kitchen: modern & classic</span>
-                            <span className='text-gray-500'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum ha</span>
-                        </div>
-                    </div>
-                    <div className="article flex flex-col gap-3 ">
-                        <div style={{ backgroundImage: "url(/images/home/section-4-2.jpg)" }} className='h-[318px] w-[495px] bg-cover'></div>
-                        <div className='flex flex-col  '>
-                            <span className='font-medium text-2xl '>How to buy a house: step to buying  a house
-                                for the first time</span>
-                            <span className='text-gray-500'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum ha</span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div className="section-5 flex flex-col gap-15   items-center justify-center w-full h-full mb-20">
-                <div className="section-5-header text-center items-center justify-center flex flex-col gap-3">
-                    <div className='flex flex-col items-center justify-center gap-3'>
-                        <span className='bg-[#FFF48E] px-3 py-2 rounded-full text-[#09242A]'>
-                            <i class="bi bi-stars"></i>
-                        </span>
-                        <span className='text-3xl font-medium w-[60%]'>What they say
-                            About us</span>
-                    </div>
-                    <span className='w-[52%] font-medium'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </span>
-                </div>
-                <div className="section-5-cards flex flex-wrap w-full h-[400px]">
-                    <div className="card w-1/4 h-[300px] bg-red-500 bg-cover" style={{ backgroundImage: "url(/images/home/section-5-1.jpg)" }}></div>
-                    <div className="card w-1/4 h-[300px] bg-[#103D47] text-[#fff] flex flex-col items-start gap-2 px-6 py-6 font-medium">
-                        <div className='flex gap-2 items-center justify-center'>
-                            <img src="/images/home/section-5-card.png" alt="" />
-                            <span>JHONE LIM</span>
-                        </div>
-                        <i className="bi bi-quote text-xl"></i>
-                        <span className='mt-2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span>
-                        <i className="bi bi-quote text-xl"></i>
-                    </div>
-                    <div className="card w-1/4 h-[300px] bg-red-500 bg-cover" style={{ backgroundImage: "url(/images/home/section-5-3.jpg)" }}></div>
-                    <div className="card w-1/4 h-[300px] bg-[#FFF48E]  text-[#103D47] flex flex-col items-start gap-2 px-6 py-6 font-medium">
-                        <div className='flex gap-2 items-center justify-center'>
-                            <img src="/images/home/section-5-card.png" alt="" />
-                            <span>JHONE LIM</span>
-                        </div>
-                        <i className="bi bi-quote text-xl"></i>
-                        <span className='mt-2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span>
-                        <i className="bi bi-quote text-xl"></i>
-                    </div>
-                    <div className="card w-1/4 h-[300px] bg-[#FFF48E] text-[#103D47] flex flex-col items-start gap-2 px-6 py-6 font-medium">
-                        <div className='flex gap-2 items-center justify-center'>
-                            <img src="/images/home/section-5-card.png" alt="" />
-                            <span>JHONE LIM</span>
-                        </div>
-                        <i className="bi bi-quote text-xl"></i>
-                        <span className='mt-2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span>
-                        <i className="bi bi-quote text-xl"></i>
-                    </div>
-                    <div className="card w-1/4 h-[300px] bg-red-500 bg-cover" style={{ backgroundImage: "url(/images/home/section-5-2.jpg)" }}></div>
-                    <div className="card w-1/4 h-[300px] bg-[#103D47] text-[#fff] flex flex-col items-start gap-2 px-6 py-6 font-medium">
-                        <div className='flex gap-2 items-center justify-center'>
-                            <img src="/images/home/section-5-card.png" alt="" />
-                            <span>JHONE LIM</span>
-                        </div>
-                        <i className="bi bi-quote text-xl"></i>
-                        <span className='mt-2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span>
-                        <i className="bi bi-quote text-xl"></i>
-                    </div>
-                    <div className="card w-1/4 h-[300px] bg-red-500 bg-cover" style={{ backgroundImage: "url(/images/home/section-5-4.jpg)" }}></div>
-                </div>
-            </div>
+            <News />
+            <Testimony />
         </div>
     )
 }

@@ -35,7 +35,7 @@ export const Contact = () => {
               <span className='px-4 py-3 border rounded-xl border-gray-400 h-fit'>
                 <i className='bi bi-person text-xl'></i>
               </span>
-              <div className='flex flex-col justify-center items-start gap2'>
+              <div className='flex flex-col justify-center items-start gap-2'>
                 <span className='font-medium'>Buyer</span>
                 <span className='text-gray-500'>Someone who wants to buy a property</span>
               </div>
@@ -44,11 +44,12 @@ export const Contact = () => {
               <span className='px-4 py-3 border rounded-xl border-gray-400 h-fit'>
                 <i className='bi bi-houses text-xl'></i>
               </span>
-              <div className='flex flex-col justify-center items-start gap2'>
+              <div className='flex flex-col justify-center items-start gap-2'>
                 <span className='font-medium'>Seller</span>
                 <span className='text-gray-500'>Someone who wants to list a property</span>
               </div>
             </div>
+            <button className='w-full bg-[#103D47] text-[#fff] px-4 py-3 rounded-full font-medium'>Send</button>
           </div>
         </div>
       </div >

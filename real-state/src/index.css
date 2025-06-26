@@ -5,10 +5,12 @@
   font-family: "semi-bold";
   src: url("/fonts/PlusJakartaSans-SemiBold.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "medium";
   src: url("/fonts/PlusJakartaSans-Medium.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "regular";
   src: url("/fonts/PlusJakartaSans-Regular.ttf") format("truetype");
@@ -16,13 +18,15 @@
 
 
 
-.semibold{
+.semibold {
   font-family: "semi-bold";
 }
-.medium{
+
+.medium {
   font-family: "medium";
 }
-.regular{
+
+.regular {
   font-family: "regular";
 }
 
@@ -64,10 +68,46 @@
   /* For Safari */
   background-color: rgba(255, 255, 255, 0.2);
 }
-.property-img{
+
+.property-img {
   background-size: cover;
   height: 3rem;
 }
+
 /* bg-[#FFF48E] */
 
+.filter-container{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
 
+.custom-range {
+  -webkit-appearance: none;
+  height: 6px;
+  background: #ddd;
+  border-radius: 3px;
+  outline: none;
+}
+
+/* Track */
+.custom-range::-webkit-slider-runnable-track {
+  height: 6px;
+  background: #8d8d8d;
+  border-radius: 3px;
+}
+
+/* Thumb */
+.custom-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 30px;
+  border-radius: 10px;
+  background: #FFF48E;
+  /* yellow */
+  border: 3px solid #103D47;
+  /* teal */
+  cursor: pointer;
+  margin-top: -7px;
+  /* to center thumb vertically */
+  position: relative;
+  z-index: 2;
+}
