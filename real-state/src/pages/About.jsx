@@ -19,7 +19,7 @@ export const About = () => {
                 <div className="about-images flex flex-wrap justify-center items-center gap-4">
                     <img src="/images/about/about-1.jpg" alt="" />
                     <img src="/images/about/about-2.jpg" alt="" />
-                    <img src="/images/about/about-3.jpg" alt="" />
+                    <img src="/images/about/about-3.jpg" alt="" className='flex-1'/>
                 </div>
                 <span className='font-medium text-4xl lowercase text-center w-[70%]'>Find Your DreamHome: Where Every Space Tells a Unique Story.Find Your DreamHome: Where Every Space Tells a Unique Story. <span className='text-gray-400'> Find Your DreamHome: Where Every Space Tells a Unique Story.</span></span>
             </div>
@@ -32,7 +32,7 @@ export const About = () => {
                     </div>
                 ))}
             </div>
-            <div className="founder px-30 py-20 flex justify-between items-center gap-10">
+            <div className="founder px-30 py-20 flex justify-between items-center gap-10 max-md:px-4">
                 <div className='flex flex-col gap-8'>
                     <span className='text-4xl font-medium'>Meet The Founder</span>
                     <div className='flex flex-col w-[80%] font-medium'>

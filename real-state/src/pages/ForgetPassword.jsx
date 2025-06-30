@@ -6,7 +6,7 @@ export const ForgetPassword = () => {
     console.log("Forget Password");
     return (
         <div className='forget-container flex px-10 py-5 w-full items-center'>
-            <div className="forget-left w-1/2 bg-rd-400 flex flex-col  h-full gap-40 px-15 mb-10">
+            <div className="forget-left w-1/2 bg-rd-400 flex flex-col  h-full gap-40 px-15 mb-10 max-md:w-full">
                 <div className="forget-header flex justify-between items-center">
                     <span className="font-bold italic text-[1.5rem]">REALSTATE</span>
                     <span className='text-gray-600'>Already have an account? <span className='text-[#000]'>SignIn</span></span>

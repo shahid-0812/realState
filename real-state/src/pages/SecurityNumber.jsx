@@ -6,7 +6,7 @@ import { LoginRight } from '../Components/LoginRight';
 export const SecurityNumber = () => {
     return (
         <div className='security-container flex px-10 py-5 w-full items-center'>
-            <div className="security-left w-1/2 bg-rd-400 flex flex-col  h-full gap-40 px-15 mb-10">
+            <div className="security-left w-1/2 bg-rd-400 flex flex-col  h-full gap-40 px-15 mb-10 max-md:w-full">
                 <div className="security-header flex justify-between items-center">
                     <span className="font-bold italic text-[1.5rem]">REALSTATE</span>
                     <span className='text-gray-600'>Already have an account? <span className='text-[#000]'>SignIn</span></span>
@@ -20,7 +20,7 @@ export const SecurityNumber = () => {
                         <span className='text-gray-700'>We sent a verification code to <span className='font-medium'>JoeDogn@mail.com</span>.</span>
                     </div>
                     <form action="#" className='flex flex-col gap-5 text-gray-700'>
-                        <div className='flex gap-3'>
+                        <div className='flex gap-3 items-center justify-center'>
                             <input type="text" className='w-[100px] h-[100px] rounded-full border-1 border-gray-400 text-center font-bold text-4xl focus:border-green-500 focus:outline-none'/>
                             <input type="text" className='w-[100px] h-[100px] rounded-full border-1 border-gray-400 text-center font-bold text-4xl focus:border-green-500 focus:outline-none'/>
                             <input type="text" className='w-[100px] h-[100px] rounded-full border-1 border-gray-400 text-center font-bold text-4xl focus:border-green-500 focus:outline-none'/>

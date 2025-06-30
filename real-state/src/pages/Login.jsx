@@ -7,13 +7,13 @@ export const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   return (
     <div className='login-container flex px-10 py-5 w-full items-center'>
-      <div className="login-left w-1/2 bg-rd-400 flex flex-col h-full gap-20 px-15 mb-10">
+      <div className="login-left w-1/2 bg-rd-400 flex flex-col h-full gap-20 px-15 mb-10 max-md:w-full">
         <div className="login-header flex justify-between items-center">
           <span className="font-bold italic text-[1.5rem]">REALSTATE</span>
           <span className='text-gray-600'>Already have an account? <span className='text-[#000]'>SignIn</span></span>
         </div>
         <div className="login-form flex flex-col gap-6 px-4">
-          <div className="form-header flex flex-col gap-2">
+          <div className="form-header flex flex-col gap-2 max-md:items-center">
             <span className='px-3 py-2 border border-gray-700 rounded-2xl w-fit'>
               <i class="bi bi-person text-2xl"></i>
             </span>

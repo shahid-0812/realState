@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 export const LoginRight = () => {
     const navigate = useNavigate();
     return (
-        <div className="login-right w-1/2 flex flex-col items-center relative">
+        <div className="login-right w-1/2 flex flex-col items-center relative max-md:hidden">
             <img src="/images/login.jpg" alt="" />
             <button onClick={() => navigate('/')} className='bg-[#fff] px-5 text-center py-2 rounded-full cursor-pointer absolute top-5 right-5' >Go to website</button>
             <div className='flex flex-col gap-3 w-[80%] absolute bottom-10 text-[#fff]'>

@@ -21,8 +21,8 @@ export const Agents = () => {
         { name: "Michael O'Neil", rating: 5.0, properties: 91, img: '/images/home/agent-4.png' },
     ];
     return (
-        <>|
-            <div className='agents-container w-full min-h-screen pt-[80px] flex flex-col gap-20 px-30 py-10'>
+        <>
+            <div className='agents-container w-full min-h-screen pt-[80px] flex flex-col gap-20 px-30 py-10 max-md:px-10'>
                 <div className="agents-header flex flex-col gap-6 w-full">
                     <span className='font-medium text-4xl text-[#14161A]'>Search properties to rent</span>
                     <div className='flex items-center gap-4'>
@@ -39,7 +39,7 @@ export const Agents = () => {
                 <div className="agents flex gap-3 flex-wrap justify-center items-start ">
                     {agentsData.map((agent, index) => (
 
-                        <div key={index} className="agent-card bg-r=ed-400 w-[24%] px-5 py-5 rounded-2xl border-1 border-gray-300 flex flex-col gap-5">
+                        <div key={index} className="agent-card bg-r=ed-400 w-[24%] max-md:w-[40%] px-5 py-5 rounded-2xl border-1 border-gray-300 flex flex-col gap-5">
                             <div className='flex justify-between items-center gap-5'>
                                 <img src={agent.img} alt="" />
                                 <span>5.0 <i className='bi bi-star-fill text-[#FBBB04]'></i></span>

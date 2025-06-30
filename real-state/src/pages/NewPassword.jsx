@@ -7,7 +7,7 @@ export const NewPassword = () => {
     const [showPassword, setShowPassword] = useState(false);
     return (
         <div className='newPassword-container flex px-10 py-5 w-full items-center'>
-            <div className="newPassword-left w-1/2 bg-rd-400 flex flex-col h-full gap-30 px-15 mb-10">
+            <div className="newPassword-left w-1/2 bg-rd-400 flex flex-col h-full gap-30 px-15 mb-10 max-md:w-full">
                 <div className="newPassword-header flex justify-between items-center">
                     <span className="font-bold italic text-[1.5rem]">REALSTATE</span>
                     <span className='text-gray-600'>Already have an account? <span className='text-[#000]'>SignIn</span></span>

@@ -3,7 +3,7 @@ import React from 'react'
 export const Footer = () => {
     console.log("Footer rendered");
     return (
-        <footer className='w-full flex flex-col bg-[#262727] text-white py-10 px-30 mt-29  pb-20'>
+        <footer className='w-full flex flex-col bg-[#262727] text-white py-10 px-30 mt-29  pb-20 max-md:hidden'>
             <div className="footer-header text-[#fff] flex flex-col gap-2 border-b border-gray-500 pb-10 w-full">
                 <span className='font-medium text-3xl text-gray-300'>Interested to purchase your home?</span>
                 <span className='font-medium text-3xl'>RealState@Contact.com</span>

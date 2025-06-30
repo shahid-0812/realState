@@ -14,6 +14,10 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { SecurityNumber } from './pages/SecurityNumber'
 import { NewPassword } from './pages/NewPassword'
 import { PrivacyPolicy } from './pages/PrivacyPolicy'
+import { Blog } from './pages/Blog'
+import { BlogDetails } from './pages/BlogDetails'
+import { PropertyDetail } from './pages/PropertyDetail'
+import { NotFound } from './pages/NotFound'
 
 function AppContent() {
   const location = useLocation();
@@ -31,11 +35,15 @@ function AppContent() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/agents" element={<Agents />} />
           <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blogdetails" element={<BlogDetails />} />
+          <Route path="/propertydetail" element={<PropertyDetail />} />
           <Route path="/login" element={<Login />} />
           <Route path="/forgot-password" element={<ForgetPassword />} />
           <Route path="/security-number" element={<SecurityNumber />} />
           <Route path="/new-password" element={<NewPassword />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       {!hideLayout && <Footer />}
