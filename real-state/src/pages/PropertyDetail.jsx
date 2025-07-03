@@ -25,7 +25,7 @@ export const PropertyDetail = () => {
     const navigate = useNavigate();
     return (
         <>
-            <div className='property-detail-container px-20 py-15 flex flex-col items-center gap-20 max-md:px-10'>
+            <div className='property-detail-container px-20 py-15 flex flex-col items-center gap-20 max-md:px-10 max-sm:px-5'>
                 <div className="property-detail-header flex justify-between items-center w-full">
                     <div className='flex flex-col gap-2'>
                         <span onClick={() => navigate(-1)} className='cursor-pointer'><i className="bi bi-chevron-left pr-2"></i> Back</span>
@@ -46,10 +46,8 @@ export const PropertyDetail = () => {
                     </div>
                 </div>
                 <div className="property-images flex flex-wrap gap-2 max-md:flex-col">
-                    {/* Left Large Image */}
+                    
                     <img src="/images/property-detail/property-detail-1.jpg" className="h-[496px] w-[60%] max-md:w-full object-cover rounded-lg" alt="" />
-
-                    {/* Right Side Small Grid */}
                     <div className="flex flex-wrap gap-2 w-[38%] max-md:w-full items-center">
                         <img src="/images/property-detail/property-detail-2.jpg" className="h-[241px] w-[48%] object-cover rounded-lg" alt="" />
                         <img src="/images/property-detail/property-detail-3.jpg" className="h-[241px] w-[48%] object-cover rounded-lg" alt="" />
@@ -66,9 +64,9 @@ export const PropertyDetail = () => {
                         </div>
                         <div className='flex flex-col gap-3'>
                             <span className='font-medium text-2xl'>Hosted</span>
-                            <div className='flex justify-between items-center'>
-                                <div className='flex gap-4'>
-                                    <img src="/images/property-detail/agent-detail-1.jpg" alt="" />
+                            <div className='flex justify-between items-center max-sm:flex-col max-sm:items-start max-sm:gap-5'>
+                                <div className='flex gap-4 max-sm:items-center'>
+                                    <img src="/images/property-detail/agent-detail-1.jpg" className='h-[30px]' alt="" />
                                     <div>
                                         <span className='font-medium'>Zohe Ival</span>
                                         <div className='text-gray-500'>
@@ -143,8 +141,8 @@ export const PropertyDetail = () => {
                     <span className='font-medium'>Location</span>
                     <img src="/images/property-detail/property-location.jpg" alt="" />
                 </div>
-                <div className="more-property flex flex-col">
-                    <span>Explore more Properties</span>
+                <div className="more-property flex flex-col gap-2 max-sm:items-center">
+                    <span className='max-sm:font-medium'>Explore more Properties</span>
                     <div className="properties flex gap-3 flex-wrap justify-center items-start">
 
                         {propertyData.map((property, index) => (

@@ -16,7 +16,10 @@
   src: url("/fonts/PlusJakartaSans-Regular.ttf") format("truetype");
 }
 
-
+body {
+  background: #FBF3EC;
+  background: linear-gradient(90deg, rgba(251, 243, 236, 1) 0%, rgba(236, 246, 252, 1) 100%);
+}
 
 .semibold {
   font-family: "semi-bold";
@@ -120,4 +123,10 @@
   /* to center thumb vertically */
   position: relative;
   z-index: 2;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-header{
+    width: 100%;
+  }
 }

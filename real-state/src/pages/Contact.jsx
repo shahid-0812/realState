@@ -2,9 +2,9 @@ import React from 'react'
 
 export const Contact = () => {
   return (
-    <div className='contact-container w-full min-h-screen pt-[80px] flex justify-center items-center gap-20 px-30 py-10'>
-      <div className='contact-left w-1/2 flex flex-col gap-10'>
-        <div className='flex flex-col w-[7  0%] gap-3'>
+    <div className='contact-container w-full min-h-screen pt-[80px] flex justify-center items-center gap-20 px-30 py-10 max-md:px-10 max-sm:px-5'>
+      <div className='contact-left w-1/2 flex flex-col gap-10 max-md:w-full max-sm:w-full'>
+        <div className='flex flex-col w-[70%] gap-3 max-sm:w-full'>
           <span className='font-medium text-3xl'>Chat to our team</span>
           <span className='text-gray-500'>Need help with something? want a demo? Get in touch with our friendly team and we”ll get in touch within 1 hour.</span>
         </div>
@@ -31,7 +31,7 @@ export const Contact = () => {
         <div className="form-btns flex flex-col gap-4">
           <span className='font-medium text-xl'>Im a...</span>
           <div className='flex flex-col gap-4'>
-            <div className='flex items-center gap-3 border border-gray-800 h-[100p] w-full rounded-2xl px-4 py-4'>
+            <div className='flex items-center gap-3 border border-gray-800 h-[100p] w-full rounded-2xl px-4 py-4 hover:shadow-lg hover:scale-101 transition duration-300'>
               <span className='px-4 py-3 border rounded-xl border-gray-400 h-fit'>
                 <i className='bi bi-person text-xl'></i>
               </span>
@@ -40,7 +40,7 @@ export const Contact = () => {
                 <span className='text-gray-500'>Someone who wants to buy a property</span>
               </div>
             </div>
-            <div className='flex items-center gap-3 border border-gray-800 h-[100p] w-full rounded-2xl px-4 py-4'>
+            <div className='flex items-center gap-3 border border-gray-800 h-[100p] w-full rounded-2xl px-4 py-4 hover:shadow-lg hover:scale-101 transition duration-300'>
               <span className='px-4 py-3 border rounded-xl border-gray-400 h-fit'>
                 <i className='bi bi-houses text-xl'></i>
               </span>
@@ -49,12 +49,12 @@ export const Contact = () => {
                 <span className='text-gray-500'>Someone who wants to list a property</span>
               </div>
             </div>
-            <button className='w-full bg-[#103D47] text-[#fff] px-4 py-3 rounded-full font-medium'>Send</button>
+            <button className='w-full bg-[#103D47] text-[#fff] px-4 py-3 rounded-full font-medium cursor-pointer hover:bg-[#376069] transition duration-300'>Send</button>
           </div>
         </div>
       </div >
       <div className="contact-right">
-        <img src="/images/contact/contact-hero.jpg" className='h-auto' alt="" />
+        <img src="/images/contact/contact-hero.jpg" className='h-auto max-md:hidden' alt="" />
       </div>
     </div >
   )

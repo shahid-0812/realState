@@ -13,7 +13,7 @@ export const NotFound = () => {
                 <span className='font-medium text-4xl text-gray-700'>Page Not Found</span>
                 <span>Sorry, we can’t find the page you’re looking for .</span>
             </div>
-            <Link to="/" className='bg-[#103D47] text-[#FFF48E] px-20 py-2 rounded-full font-medium hover:bg-[#09242A] transition duration-300'>
+            <Link to="/" className='bg-[#103D47] text-[#FFF48E] px-20 py-2 rounded-full font-medium hover:bg-[#09242A] transition duration-300 max-sm:px-15'>
                 Back to Home
             </Link >
         </div>

@@ -4,7 +4,7 @@ import { News } from '../Components/News'
 
 export const BlogDetails = () => {
     return (
-        <div className='blog-details-container px-30 py-15 flex flex-col items-center gap-20 max-md:px-10'>
+        <div className='blog-details-container px-30 py-15 flex flex-col items-center gap-20 max-md:px-10 max-sm:px-5'>
             <div className="details-header flex items-start justify-between gap-6 max-md:flex-col">
                 {/* Left Side */}
                 <div className="flex flex-col gap-4 w-1/2 max-md:w-full">

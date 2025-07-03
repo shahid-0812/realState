@@ -24,8 +24,8 @@ export const Agents = () => {
         <>
             <div className='agents-container w-full min-h-screen pt-[80px] flex flex-col gap-20 px-30 py-10 max-md:px-10'>
                 <div className="agents-header flex flex-col gap-6 w-full">
-                    <span className='font-medium text-4xl text-[#14161A]'>Search properties to rent</span>
-                    <div className='flex items-center gap-4'>
+                    <span className='font-medium text-4xl text-[#14161A] max-sm:text-2xl'>Search properties to rent</span>
+                    <div className='flex items-center gap-4 max-sm:justify-center'>
                         <div className='w-full bg-rd-400 border-2 border-gray-300 px-6 py-2 rounded-full flex gap-3 items-center'>
                             <i class="bi bi-geo-alt text-2xl"></i>
                             <div className='flex flex-col '>
@@ -33,13 +33,13 @@ export const Agents = () => {
                                 <input type="text" name="country" className='font-medium focus:outline-0  ' id="country" value="Dubai" />
                             </div>
                         </div>
-                        <span className='text-[#FFF48E] bg-[#103D47] px-5 py-4 rounded-full text-2xl'><i class="bi bi-filter"></i></span>
+                        <span className='text-[#FFF48E] bg-[#103D47] px-5 py-4 rounded-full text-2xl max-sm:px-3 max-sm:py-2'><i class="bi bi-filter"></i></span>
                     </div>
                 </div>
                 <div className="agents flex gap-3 flex-wrap justify-center items-start ">
                     {agentsData.map((agent, index) => (
 
-                        <div key={index} className="agent-card bg-r=ed-400 w-[24%] max-md:w-[40%] px-5 py-5 rounded-2xl border-1 border-gray-300 flex flex-col gap-5">
+                        <div key={index} className="agent-card bg-r=ed-400 w-[24%] max-md:w-[40%] max-sm:w-full px-5 py-5 rounded-2xl border-1 border-gray-300 flex flex-col gap-5">
                             <div className='flex justify-between items-center gap-5'>
                                 <img src={agent.img} alt="" />
                                 <span>5.0 <i className='bi bi-star-fill text-[#FBBB04]'></i></span>
@@ -53,7 +53,7 @@ export const Agents = () => {
                     ))}
                 </div>
                 <div className="pages">
-                    <ul className='flex gap-3 justify-center items-center'>
+                    <ul className='flex gap-3 justify-center items-center max-sm:flex-wrap'>
                         <li><i class="bi bi-caret-left text-xl text-gray-500 font-medium hover:bg-[#09242A] hover:text-[#fff] transition duration-300 px-4 py-3 rounded-full cursor-pointer"></i></li>
                         <li className=' text-gray-500 font-medium hover:bg-[#09242A] hover:text-[#fff] transition duration-300 px-6 py-4 rounded-full cursor-pointer'>1</li>
                         <li className=' text-gray-500 font-medium hover:bg-[#09242A] hover:text-[#fff] transition duration-300 px-6 py-4 rounded-full cursor-pointer'>2</li>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Filter } from '../Components/Filter';
-
+import { Link } from 'react-router-dom';
 export const Collections = () => {
   const [showFilter, setShowFilter] = useState(false);
 
@@ -21,25 +21,25 @@ export const Collections = () => {
   ];
   return (
     <div className='collections-container w-full min-h-screen pt-[80px] flex flex-col gap-20 px-30 py-10 max-md:px-10'>
-      <div className="collections-header flex flex-col gap-6 w-full">
-        <span className='font-medium text-4xl text-[#14161A]'>Search properties to rent</span>
-        <div className='relative flex items-center gap-4'>
-          <div className='w-full bg-rd-400 border-2 border-gray-300 px-6 py-2 rounded-full flex gap-3 items-center'>
+      <div className="collections-header  flex flex-col gap-6 w-full max-sm:items-center">
+        <span className='font-medium text-4xl text-[#14161A] max-sm:text-2xl'>Search properties to rent</span>
+        <div className='flex relative items-center gap-4 max-sm:gap-2'>
+          <div className='w-full border-2 border-gray-300 px-6 py-2 rounded-full flex gap-3 items-center'>
             <i class="bi bi-geo-alt text-2xl"></i>
             <div className='flex flex-col '>
               <label htmlFor="country">Location</label>
               <input type="text" name="country" className='font-medium focus:outline-0  ' id="country" value="Dubai" />
             </div>
           </div>
-          <span className='text-[#FFF48E] bg-[#103D47] px-5 py-4 rounded-full text-2xl' onClick={() => setShowFilter(!showFilter)}><i class="bi bi-filter"></i></span>
+          <span className='text-[#FFF48E] bg-[#103D47] px-5 py-4 rounded-full text-2xl cursor-pointer max-sm:px-3 max-sm:py-2' onClick={() => setShowFilter(!showFilter)}><i class="bi bi-filter"></i></span>
           {showFilter && (
-            <div className="absolute left-100 top-10 w-full">
+            <div className="top-20 right-0 absolute w-fit">
               <Filter />
             </div>
           )}
         </div>
       </div>
-      <div className="collections flex gap-3 flex-wrap justify-center items-start ">
+      <Link to="/propertydetail" className="collections flex gap-3 flex-wrap justify-center items-start ">
         {collectionData.map((collection, index) => (
           <div key={index} className="flex flex-col gap-2 property-card w-fit h-fit mb-10 bg-ed-500">
             <div className={`w-[247px] h-[238px] bg-yellow-300 bg-cover rounded-xl py-6 px-4 `} style={{ backgroundImage: `url(${collection.img})` }}>
@@ -55,9 +55,9 @@ export const Collections = () => {
           </div>
 
         ))}
-      </div>
+      </Link>
       <div className="pages">
-        <ul className='flex gap-3 justify-center items-center'>
+        <ul className='flex gap-3 justify-center items-center max-sm:flex-wrap'>
           <li><i class="bi bi-caret-left text-xl text-gray-500 font-medium hover:bg-[#09242A] hover:text-[#fff] transition duration-300 px-4 py-3 rounded-full cursor-pointer"></i></li>
           <li className=' text-gray-500 font-medium hover:bg-[#09242A] hover:text-[#fff] transition duration-300 px-6 py-4 rounded-full cursor-pointer'>1</li>
           <li className=' text-gray-500 font-medium hover:bg-[#09242A] hover:text-[#fff] transition duration-300 px-6 py-4 rounded-full cursor-pointer'>2</li>
