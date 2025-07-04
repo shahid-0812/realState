@@ -2,6 +2,7 @@ import React from 'react'
 import { Testimony } from '../Components/Testimony';
 import { News } from '../Components/News';
 import { Link } from 'react-router-dom';
+import { Footer } from '../Components/Footer';
 
 
 export const Home = () => {
@@ -48,7 +49,8 @@ export const Home = () => {
     ];
 
     return (
-        <div className='home-container'>
+
+        <div className='home-container flex flex-col flex-grow'>
             <div className="hero-section flex items-center justify-center py-10 max-sm:flex-col max-sm:px-5 max-sm:relative">
                 <div className='hero-header flex gap-15 items-center justify-between text-[#fff] mx-10 max-sm:flex-col max-sm:w-[300px]'>
                     <div className="hero-text flex flex-col z-10 leading-none ml-20 max-sm:ml-0 w-[50%] gap-2 max-sm:items-center max-sm:w-full px-10 max-sm:text-center max-sm:py-5">
@@ -91,14 +93,14 @@ export const Home = () => {
                     </div>
 
                     <div className="hero-form bg-red- self-end mb-4 gap-4 flex-col z-10 w-full mr-5 hidden lg:flex">
-                        <div className="cur-time flex gap-2 py-2  px-3 items-center justify-center bg-[#fff] rounded-4xl">
+                        <div className="cur-time flex gap-2 py-2  px-1 items-center justify-center bg-[#fff] rounded-4xl">
                             <span className='px-3 py-2 bg-[#45656E] rounded-4xl'>
                                 <i class="bi bi-globe-americas text-[#FFF48E] text-xl"></i>
                             </span>
                             <span className='text-sm'>Your Current Time Now Is</span>
                             <div className='calender  px-3 py-2 flex gap-2 items-center justify-center rounded-4xl'>
                                 <i class="bi bi-calendar4-range"></i>
-                                <span className='text-sm'>21-04-2025</span>
+                                <span className='text-xs'>21-04-2025</span>
                             </div>
                         </div>
                         <div className="form text-[#103D47] w-full bg-[#fff] px-5 py-4 rounded-2xl  flex flex-col gap-5">

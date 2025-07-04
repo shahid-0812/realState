@@ -16,6 +16,15 @@
   src: url("/fonts/PlusJakartaSans-Regular.ttf") format("truetype");
 }
 
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
 body {
   background: #FBF3EC;
   background: linear-gradient(90deg, rgba(251, 243, 236, 1) 0%, rgba(236, 246, 252, 1) 100%);
@@ -126,7 +135,7 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .hero-header{
+  .hero-header {
     width: 100%;
   }
 }

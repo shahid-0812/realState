@@ -46,7 +46,7 @@ function AppContent() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
-      {!hideLayout && <Footer />}
+      {!hideLayout && <Footer />} 
     </div>
   );
 }

@@ -6,7 +6,7 @@ export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <nav className="bg-white shadow-lg sticky top-0 z-50 px-4 py-[2rem] ">
+        <nav className="bg-white  shadow-lg sticky top-0 z-50 px-4 py-[2rem] ">
             {/* Mobile View */}
             <div className="flex justify-between items-center lg:hidden relative">
                 {/* Left: Burger */}
@@ -43,7 +43,7 @@ export const Navbar = () => {
             )}
 
             {/* Desktop View */}
-            <div className="hidden lg:flex justify-between items-center px-10">
+            <div className="hidden  lg:flex justify-between items-center px-10">
                 {/* Left: Logo */}
                 <span className="font-bold italic text-[1.5rem]">REALSTATE</span>
 

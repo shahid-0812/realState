@@ -113,7 +113,7 @@ export const Blog = () => {
 
                     </div>
                 </div>
-                <div className="section-3   flex flex-col gap-15">
+                <div className="section-3 flex flex-col gap-15">
                     <div className="section-3-header flex justify-between max-sm:flex-col max-sm:gap-4">
                         <div className='flex flex-col gap-6 w-[40%] max-sm:w-full'>
                             <span className="text-3xl font-medium">Explore the best Properties from us for you</span>
