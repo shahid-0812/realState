@@ -139,3 +139,6 @@ body {
     width: 100%;
   }
 }
+.active{
+  font-weight: bolder;
+}

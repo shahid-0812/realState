@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Testimony } from '../Components/Testimony';
+import { Filter } from '../Components/Filter';
 
 export const Agents = () => {
+    const [showFilter, setShowFilter] = useState(false);
+
     const agentsData = [
         { name: 'John Thompson', rating: 5.0, properties: 120, img: '/images/home/agent-1.png' },
         { name: 'Samantha Green', rating: 5.0, properties: 108, img: '/images/home/agent-2.png' },
@@ -25,7 +28,7 @@ export const Agents = () => {
             <div className='agents-container w-full min-h-screen pt-[80px] flex flex-col gap-20 px-30 py-10 max-md:px-10'>
                 <div className="agents-header flex flex-col gap-6 w-full">
                     <span className='font-medium text-4xl text-[#14161A] max-sm:text-2xl'>Search properties to rent</span>
-                    <div className='flex items-center gap-4 max-sm:justify-center'>
+                    <div className='flex relative items-center gap-4 max-sm:justify-center'>
                         <div className='w-full bg-rd-400 border-2 border-gray-300 px-6 py-2 rounded-full flex gap-3 items-center'>
                             <i class="bi bi-geo-alt text-2xl"></i>
                             <div className='flex flex-col '>
@@ -33,7 +36,12 @@ export const Agents = () => {
                                 <input type="text" name="country" className='font-medium focus:outline-0  ' id="country" value="Dubai" />
                             </div>
                         </div>
-                        <span className='text-[#FFF48E] bg-[#103D47] px-5 py-4 rounded-full text-2xl max-sm:px-3 max-sm:py-2'><i class="bi bi-filter"></i></span>
+                        <span className='text-[#FFF48E] bg-[#103D47] px-5 py-4 rounded-full text-2xl max-sm:px-3 max-sm:py-2 cursor-pointer' onClick={() => setShowFilter(!showFilter)}><i class="bi bi-filter"></i></span>
+                        {showFilter && (
+                            <div className="top-20 right-0 absolute w-fit">
+                                <Filter setShowFilter={setShowFilter}/>
+                            </div>
+                        )}
                     </div>
                 </div>
                 <div className="agents flex gap-3 flex-wrap justify-center items-start ">

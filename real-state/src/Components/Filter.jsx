@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Filter = () => {
+export const Filter = ({ setShowFilter }) => {
     return (
         <div className='filter-container w-fit flex flex-col gap-8 bg-[#fff] rounded-2xl px-8 py-8 max-md:w-full max-sm:w-full'>
             <div className='flex items-center gap-3'>
@@ -66,7 +66,7 @@ export const Filter = () => {
             </div>
             <div className="actions flex justify-between gap-20 items-center px-8">
                 <span className='underline'>Clear Filters</span>
-                <span className='px-15 py-3 bg-[#103D47] flex-1 text-center rounded-full text-[#fff] font-medium cursor-pointer hover:bg-[#376069] transition duration-300'>Save</span>
+                <span className='px-15 py-3 bg-[#103D47] flex-1 text-center rounded-full text-[#fff] font-medium cursor-pointer hover:bg-[#376069] transition duration-300' onClick={() => setShowFilter(false)}>Save</span>
             </div>
         </div>
     )

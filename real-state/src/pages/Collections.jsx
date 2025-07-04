@@ -37,7 +37,7 @@ export const Collections = () => {
             <span className='text-[#FFF48E] bg-[#103D47] px-5 py-4 rounded-full text-2xl cursor-pointer max-sm:px-3 max-sm:py-2' onClick={() => setShowFilter(!showFilter)}><i class="bi bi-filter"></i></span>
             {showFilter && (
               <div className="top-20 right-0 absolute w-fit">
-                <Filter />
+                <Filter setShowFilter={setShowFilter}/>
               </div>
             )}
           </div>
