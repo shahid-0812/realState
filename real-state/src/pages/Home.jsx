@@ -64,7 +64,7 @@ export const Home = () => {
                             <span>RealState</span>
                             <div className='flex items-center justify-center'>
                                 <span className='transform -translate-x-8 max-sm:translate-0'>Property</span>
-                                <div className="circle-text max-sm:hidden transform -translate-x-0 max-md:-translate-x-0 bg-white/50 relative w-[80px] h-[80px] rounded-full flex items-center justify-center mx-auto">
+                                <div className="circle-text max-sm:hidden shrink-0 bg-white/50 relative w-[80px] h-[80px] rounded-full flex items-center justify-center">
                                     {"•  CONTACT US • CONTACT US • CONTACT US".split('').map((char, i) => (
 
                                         <span
@@ -90,6 +90,10 @@ export const Home = () => {
                             <span>Investments</span>
                         </div>
                         <span className='text-sm text-wrap'>Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text </span>
+                        <div className='flex flex-col mt-15'>
+                            <span className='text-2xl font-medium'>10k</span>
+                            <span>Satisfied Customers</span>
+                        </div>
                     </div>
 
                     <div className="hero-form bg-red- self-end mb-4 gap-4 flex-col z-10 w-full mr-5 hidden lg:flex">

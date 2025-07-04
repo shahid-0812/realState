@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export const Footer = () => {
     console.log("Footer rendered");
     return (
-        <footer className='w-full flex flex-col bg-[#262727] text-white py-10 px-30 pb-20 max-md:px-15'>
+        <footer className='relative overflow-hidden w-full flex flex-col bg-[#262727] text-white py-10 px-30 pb-20 max-md:px-15'>
             <div className="footer-header text-[#fff] flex flex-col gap-2 border-b border-gray-500 pb-10 w-full">
                 <span className='font-medium text-3xl text-gray-300 max-sm:text-2xl'>Interested to purchase your home?</span>
                 <span className='font-medium text-3xl max-sm:text-2xl'>RealState@Contact.com</span>
@@ -44,6 +44,7 @@ export const Footer = () => {
 
                 </div>
             </div>
+            <span className='absolute pointer-events-none text-[#cccccc] text-[18rem] opacity-8 top-18 font-bold italic -right-80 transform -rotate-20'>REAL</span>
         </footer>
     )
 }
